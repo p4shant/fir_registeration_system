@@ -1,0 +1,105 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #49535e;
+    color: #fff;
+    padding: 3px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .navbar-logo-image {
+    height: 70px; /* Set the desired height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-right: 20px;
+  }
+  
+  .navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Login/Register Button */
+
+  .navbar-login {
+    margin-right: 20px; /* Add margin to separate from other links */
+  }
+  
+  .navbar-login a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    /* Adjust padding and font size for medium screens */
+    .navbar {
+      padding: 8px 16px;
+    }
+    .navbar-logo a {
+      font-size: 20px;
+    }
+    .navbar-links li a {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Flex-direction column for smaller screens */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px;
+    }
+  
+    /* Adjust margin for links */
+    .navbar-links {
+      flex-direction: column;
+      margin-top: 8px;
+    }
+  
+    /* Remove right margin for list items */
+    .navbar-links li {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  
+    /* Adjust margin-top for login button */
+    .navbar-login {
+      margin-top: 8px;
+    }
+  }
+  
