@@ -6,6 +6,7 @@ import './css/app.css';
 import Navbar from './components/Navbar';
 import Service from './components/Service';
 import Registerfir from './components/Registerfir';
+import ComplaintPage from './components/ComplaintPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Service />} />
           <Route path="/register-fir" element={<Registerfir />} />
+          <Route path="/complaints" element={<ComplaintPage />} />
         </Routes>
       </div>
     </Router>
