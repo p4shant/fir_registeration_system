@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/ComplaintPage.css';
 
 const ComplaintPage = () => {
@@ -29,6 +30,7 @@ const ComplaintPage = () => {
                 <h3>{fir.name}</h3>
                 <p>Date: {fir.date}</p>
                 <p>Crime: {fir.crime}</p>
+                <Link to={`/status/${index}`} className="view-status">View Status</Link>
               </div>
             ))}
           </div>

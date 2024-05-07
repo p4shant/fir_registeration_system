@@ -1,0 +1,107 @@
+/* src/css/Status.css */
+
+/* General Styles */
+.status-container {
+  max-width: 1200px;
+  margin: 100px auto 0; /* Space between top navbar and status line */
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    top: 20px; /* Adjust the top position to move the line down */
+    bottom: 20px; /* Adjust the bottom position to move the line up */
+    width: 8px; /* Increase the width for a thicker line */
+    background-color: #333; /* Set the color to a darker shade */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase the shadow intensity */
+    border-radius: 4px; /* Increase the border-radius for rounded edges */
+    z-index: 1; /* Ensure the line is above other elements */
+  }
+  
+  .line:before,
+  .line:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px; /* Increase the width of the circular elements */
+    height: 30px; /* Increase the height of the circular elements */
+    border-radius: 50%;
+    background-color: #333; /* Set the color to match the line */
+    z-index: 2; /* Ensure the circular elements are above the line */
+  }
+  
+  .line:before {
+    top: 0; /* Position the top circular element at the start of the line */
+  }
+  
+  .line:after {
+    bottom: 0; /* Position the bottom circular element at the end of the line */
+  }
+
+.line:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.status-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.status-item .content {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .status-container {
+    padding: 20px;
+  }
+
+  .status-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .status-item .content {
+    padding: 10px;
+  }
+
+  .right {
+    left: 0;
+  }
+}

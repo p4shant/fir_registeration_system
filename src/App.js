@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Service from './components/Service';
 import Registerfir from './components/Registerfir';
 import ComplaintPage from './components/ComplaintPage';
+import Status from './components/Status';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Service />} />
           <Route path="/register-fir" element={<Registerfir />} />
           <Route path="/complaints" element={<ComplaintPage />} />
+          <Route path="/status/:id" element={<Status />} />
         </Routes>
       </div>
     </Router>
