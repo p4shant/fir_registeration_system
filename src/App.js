@@ -1,5 +1,4 @@
 // src/App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './css/app.css';
@@ -20,8 +19,8 @@ function App() {
           <Route path="/register-fir" element={<Registerfir />} />
           <Route path="/complaints" element={<ComplaintPage />} />
           <Route path="/status/:id" element={<Status />} />
+          <Route path="/latestupdate" element={<Latestupdate />} />
         </Routes>
-        <Latestupdate />
       </div>
     </Router>
   );

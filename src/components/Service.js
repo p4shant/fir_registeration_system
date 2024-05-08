@@ -19,7 +19,7 @@ const Service = () => {
           <div className="service-content">
             <h3 className="service-title">Register e-FIR</h3>
             <p className="service-description">
-              Without physically visiting a police station, complainants can register FIRs and promptly receive a copy of them using e-FIR application registration.
+              Without physically visiting a police station, complainants can register FIRs.
             </p>
             <Link to="/register-fir">
               <button className="service-button">Get Service</button>
@@ -32,7 +32,7 @@ const Service = () => {
           <div className="service-content">
             <h3 className="service-title">View/Download FIR</h3>
             <p className="service-description">
-              For the selected police station and time period, a list of all FIR would be available. Additionally, Users have the option to download the FIR.
+              For the selected police station and time period, a list of all FIR would be available.
             </p>
             <button className="service-button">Get Service</button>
           </div>
@@ -41,7 +41,7 @@ const Service = () => {
         <div className="service-card">
           <img src={lostArticleImage} alt="Lost Article" className="service-image" />
           <div className="service-content">
-            <h3 className="service-title">View/Download Lost Article</h3>
+            <h3 className="service-title">View Lost Article</h3>
             <p className="service-description">
               Users would have the access to download any lost articles from a list of all visible lost articles.
             </p>
@@ -54,7 +54,7 @@ const Service = () => {
           <div className="service-content">
             <h3 className="service-title">Protest/Strike Request</h3>
             <p className="service-description">
-              Service is designed to ensure that the protest or strike is conducted in a peaceful and non-disruptive manner, without causing any harm to public property or inconvenience to the general public.
+              Service is designed to ensure that the protest or strike is conducted in a peaceful and non-disruptive manner, without causing any harm to public property .
             </p>
             <button className="service-button">Get Service</button>
           </div>
