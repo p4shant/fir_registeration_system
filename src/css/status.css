@@ -30,7 +30,7 @@ h1 {
     position: absolute;
     left: 50%;
     top: 20px; /* Adjust the top position to move the line down */
-    bottom: 20px; /* Adjust the bottom position to move the line up */
+    bottom: 10px; /* Adjust the bottom position to move the line up */
     width: 8px; /* Increase the width for a thicker line */
     background-color: #333; /* Set the color to a darker shade */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase the shadow intensity */
@@ -85,6 +85,7 @@ h1 {
 .right {
   left: 50%;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
